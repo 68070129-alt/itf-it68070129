@@ -22,7 +22,7 @@
         </div>
     </div>
     <hr>
-    <textarea></textarea>
+    <textarea id="log_area"></textarea>
     <div class="bank-system">
         <div class="Accont-overview">
             <div id="Acc-overview">Account Overview</div>
@@ -43,14 +43,12 @@
                     <div header-text>
                         <div class="head-ao">Balance Information</div>
                         <div class="flex">
-                        <div>Current account</div><input type="text">
+                        <div>Current account balance:</div><input type="number" name = "Current-account" id="money">
                         </div>
-                        <div>balance:</div>
                         <div class="flex">
-                        <div>Current cash</div><input type="text">
+                        <div>Current cash balance:</div><input type="number" name="Current-balance" id="cash">
                         </div>
-                        <div>balance:</div>
-                        <button> Change </button>
+                        <button  onclick="Change()"> Change </button>
                     </div>
                 </div>
 
@@ -60,14 +58,12 @@
                     <div header-text>
                         <div class="head-ao">Bank Operation</div>
                         <div class="flex">
-                        <form>
-                            <select>
+                            <select id="selecter">
                                 <option value="Deposite">Deposite</option>
                                 <option value="Withdraw">Withdraw</option>
-                            </select><input type="number">
+                            </select><input type="number" name="oper_balance" id="balance">
                             <br>
-                            <button>Proceed</button>
-                        </form>
+                            <button onclick="Proceed()">Proceed</button>
                         </div>
                     </div>
                 </div>
@@ -105,38 +101,3 @@
 </body>
 
 </html>
-<!-- 
-<div>
-            Enter number: <input type="number" id = "myinput" value="0">
-            <button onclick="add()">Submit(+1)</button>
-</div>
-
-        <div class="flex form-input">
-            <div class="header-form">First name</div>
-            <input class="form" name = "firstname" type="text">
-        </div>
-        <div class="flex form-input">
-            <div class="header-form">Last name</div>
-            <input class="form" name = "firstname" type="text">
-        </div>
-        <div class="flex form-input">
-            <div class="header-form">Email</div>
-            <input class="form" name = "firstname" type="text">
-</div>
-
-
-
-
-
-
-<div class="Container-accinfo">
-                    <img src="https://i.pinimg.com/736x/6a/51/5f/6a515f36e9fd69300e183666aaa294a9.jpg" width="100px"
-                        height="100px">
-                    <div header-text>
-                        <div id="ITF">ITF Simple Bank</div>
-                        <div>Welcome to my banking system!!!</div>
-                    </div>
-                </div>
-
-
--->
